@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="superfish" content="nofish">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>When is E3?</title>
+  <meta charset="UTF-8">
+  <meta name=”referrer” content=”always”>
+  <meta name="description" content="Shows the dates for E3.">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel = "stylesheet" href = "css/style.css">
+  <link rel="shortcut icon" href="http://chris-a.rocks/whenise3/img/e3.png">
+</head>
+
+<body>
+  <script>
+  var offset = new Date().getTimezoneOffset() / 60;
+
+  function checkDate(event){
+    if(event == "EA"){
+       if(offset == 7){
+        document.getElementById("ea").innerHTML = ("Sunday, June 12th at 1PM ");
+      }
+      else if(offset == 6){
+        document.getElementById("ea").innerHTML = ("Sunday, June 12th at 2PM ");
+      }
+      else if(offset == 5){
+        document.getElementById("ea").innerHTML = ("Sunday, June 12th at 3PM");
+      }
+      else if(offset == 4){
+        document.getElementById("ea").innerHTML = ("Sunday, June 12th at 4PM");
+      } else {
+        document.getElementById("ea").innerHTML = ("Sunday, June 12th at 1PM PST");
+      }
+    }
+    if(event == "bethesda"){
+       if(offset == 7){
+        document.getElementById("bethesda").innerHTML = ("Sunday, June 12th at 7PM ");
+      }
+      else if(offset == 6){
+        document.getElementById("bethesda").innerHTML = ("Sunday, June 12th at 8PM ");
+      }
+      else if(offset == 5){
+        document.getElementById("bethesda").innerHTML = ("Sunday, June 12th at 9PM");
+      }
+      else if(offset == 4){
+        document.getElementById("bethesda").innerHTML = ("Sunday, June 12th at 10PM");
+      } else {
+        document.getElementById("bethesda").innerHTML = ("Sunday, June 12th at 7PM PST ");
+      }
+    }
+    if(event == "xbox"){
+       if(offset == 7){
+        document.getElementById("xbox").innerHTML = ("Monday, June 13th at 9:30AM");
+      }
+      else if(offset == 6){
+        document.getElementById("xbox").innerHTML = ("Monday, June 13th at 10:30AM ");
+      }
+      else if(offset == 5){
+        document.getElementById("xbox").innerHTML = ("Monday, June 13th at 11:30AM");
+      }
+      else if(offset == 4){
+        document.getElementById("xbox").innerHTML = ("Monday, June 13th at 12:30PM");
+      } else {
+        document.getElementById("xbox").innerHTML = ("Monday, June 13th at 9:30AM PST ");
+      }
+    }
+    if(event == "ubisoft"){
+       if(offset == 7){
+        document.getElementById("ubisoft").innerHTML = ("Monday, June 13th at 1PM ");
+      }
+      else if(offset == 6){
+        document.getElementById("ubisoft").innerHTML = ("Monday, June 13th at 2PM  ");
+      }
+      else if(offset == 5){
+        document.getElementById("ubisoft").innerHTML = ("Monday, June 13th at 3PM ");
+      }
+      else if(offset == 4){
+        document.getElementById("ubisoft").innerHTML = ("Monday, June 13th at 4PM");
+      } else {
+        document.getElementById("xbox").innerHTML = ("Monday, June 13th at 1PM PST");
+      }
+    }
+    if(event == "sony"){
+       if(offset == 7){
+        document.getElementById("sony").innerHTML = ("Monday, June 13th at 6PM ");
+      }
+      else if(offset == 6){
+        document.getElementById("sony").innerHTML = ("Monday, June 13th at 7PM  ");
+      }
+    else if(offset == 5){
+        document.getElementById("sony").innerHTML = ("Monday, June 13th at 8PM ");
+      }
+      else if(offset == 4){
+        document.getElementById("sony").innerHTML = ("Monday, June 13th at 9PM");
+      } else {
+        document.getElementById("sony").innerHTML = ("Monday, June 13th at 6PM PST ");
+      }
+    }
+    if(event == "nintendo"){
+       if(offset == 7){
+        document.getElementById("nintendo").innerHTML = ("Tuesday, June 14th at 9:00AM  Wednesday, June 15th at 10:00AM  ");
+      }
+      else if(offset == 6){
+        document.getElementById("nintendo").innerHTML = ("Tuesday, June 14th at 10:00AM  Wednesday, June 15th at 11:00AM  ");
+      }
+      else if(offset == 5){
+        document.getElementById("nintendo").innerHTML = ("Tuesday, June 14th at 11:00AM  Wednesday, June 15th at 12:00PM  ");
+      }
+      else if(offset == 4){
+        document.getElementById("nintendo").innerHTML = ("Tuesday, June 14th at 12:00PM AND  Wednesday, June 15th at 1:00PM ");
+      } else {
+        document.getElementById("nintendo").innerHTML = ("Tuesday, June 14th at 9:00AM  Wednesday, June 15th at 10:00AM PST");
+      }
+    }
+  }
+
+
+window.onload = function() {
+  checkDate("bethesda");
+  checkDate("EA");
+  checkDate("xbox");
+  checkDate("ubisoft");
+  checkDate("sony");
+  checkDate("nintendo");
+}
+  </script>
+<h6> When Is E3? </h6>
+<div class="container">
+    <div class="row">
+      <div class="four columns">
+          <div class = "box">
+              <img src = "img/bethesda.png">
+              <h4>Bethesda Software</h4>
+              <a href = "https://www.twitch.tv/bethesda"<h5> Watch the LiveStream </h5></a>
+              <h4 id = "bethesda"></h4>
+          </div>
+      </div>
+      <div class="four columns">
+         <div class = "box">
+           <img src = "img/ea.png" style = "width:50%; height:50%px;">
+           <h4>Electronic Arts</h4>
+           <a href = "https://www.twitch.tv/ea"<h5> Watch the LiveStream </h5></a>
+           <h4 id = "ea"></h4>
+          </div>
+      </div>
+      <div class="four columns">
+         <div class = "box">
+           <img src = "img/xbox.png" style = "width:35%; height:50%px;">
+           <h4>Xbox</h4>
+           <a href = "https://www.twitch.tv/xbox"<h5> Watch the LiveStream </h5></a>
+           <h4 id = "xbox"></h4>
+          </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="four columns">
+         <div class = "box">
+           <img src = "img/Ubisoft.png" style = "width:50%; height:50%px;">
+           <h4>Ubisoft</h4>
+           <a href = "https://www.twitch.tv/ubisoft"<h5> Watch the LiveStream </h5></a>
+           <h4 id = "ubisoft"></h4>
+          </div>
+      </div>
+    <div class="four columns">
+          <div class = "box">
+            <img src = "img/playstation.png" style = "width:50%; height:50%px;">
+            <h4>Sony</h4>
+            <a href = "https://www.twitch.tv/sony"<h5> Watch the LiveStream </h5></a>
+            <h4 id = "sony"></h4>
+          </div>
+      </div>
+      <div class="four columns">
+         <div class = "box">
+           <img src = "img/nintendo.png" style = "width:50%; height:50%px;">
+           <h4>Nintendo</h4>
+           <a href = "https://www.twitch.tv/nintendo"<h5> Watch the LiveStream </h5></a>
+           <h4 id = "nintendo"></h4>
+        </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
